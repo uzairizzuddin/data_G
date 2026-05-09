@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data & Digital Governance</title>
+    <style>
+        /* Removes all borders and stops the page from scrolling */
+        body, html { 
+            margin: 0; 
+            padding: 0; 
+            height: 100%; 
+            overflow: hidden; 
+            background-color: #6a1a1a; /* Matches your Gamuda red background */
+        }
+        
+        /* The container that holds the report */
+        .pbi-wrapper {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden; /* This hides anything that spills outside */
+        }
+
+        /* The actual Power BI iframe */
+        .pbi-iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            /* MAGIC TRICK: Makes the iframe 40 pixels taller than the screen, 
+               pushing the bottom Microsoft bar down into the hidden area */
+            height: calc(100% + 40px); 
+            border: none;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="pbi-wrapper">
+        <!-- REPLACE THE LINK BELOW WITH YOUR PUBLISH TO WEB LINK -->
+        <iframe class="pbi-iframe" src="https://app.powerbi.com/view?r=eyJrIjoiMTUwYzM0MGQtMzU3ZC00NDRmLWE4MjAtZWYyYTQxNjRjOTNiIiwidCI6ImQ5ZWZkMDdhLTZiYjgtNDM1ZS04OTYzLTNmNDgyYzdmMWQ4MyIsImMiOjEwfQ%3D%3D" allowFullScreen="true"></iframe>
+    </div>
+
+</body>
+</html>
